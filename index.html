@@ -4,22 +4,6 @@
 <!-- Mirrored from offer.wuzutech.com/wuzutech/herzp1smartring/en/us/int2?oidsm=151&affidsm=39&source_id=342&uid=2274&oid=686&affid=342 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 May 2025 17:47:19 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '690542593925204');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=690542593925204&ev=PageView&noscript=1"
-/></noscript>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Herz P1 Smart Ring</title>
@@ -62,7 +46,26 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TLKGJTTZ');</script>
-<!-- End Google Tag Manager --></head>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '690542593925204');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=690542593925204&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
   <script>
     let promoCode = "GOSMART";
   </script>
@@ -1961,16 +1964,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    var btn = document.getElementById("buyNow");
-    if (btn) {
-        btn.href = "https://offer.wuzutech.com/wuzutech/herzp1smartring/en/us/v2/checkout?uidsm=506&oidsm=151&affidsm=39&source_id=342&uid=2275&oid=686&affid=342";
-        btn.addEventListener("click", function() {
-            fbq('track', 'InitiateCheckout', {
-                content_name: 'Click to Checkout - Smart Ring'
-            });
-        });
-    }
+document.addEventListener('DOMContentLoaded', function () {
+  const newURL = "https://offer.wuzutech.com/wuzutech/herzp1smartring/en/us/v2/checkout?uidsm=506&oidsm=151&affidsm=39&source_id=342&uid=2275&oid=686&affid=342";
+  document.querySelectorAll('a[href*="v2/checkout"]').forEach(btn => {
+    btn.setAttribute('href', newURL);
+    btn.onclick = function(e) {
+      e.preventDefault();
+      window.location.href = newURL;
+    };
+  });
 });
 </script>
 
